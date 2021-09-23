@@ -20,6 +20,8 @@ p1Button.addEventListener('click', function (e) {
             GameOver = true;
             display1.classList.add('text-success')
             display2.classList.add('text-danger')
+            p1Button.disabled = true
+            p2Button.disabled = true
 
         }
     }
@@ -33,6 +35,8 @@ p2Button.addEventListener('click', function (e) {
             GameOver = true;
             display2.classList.add('text-success')
             display1.classList.add('text-danger')
+            p1Button.disabled = true
+            p2Button.disabled = true
         }
     }
 })
@@ -47,6 +51,8 @@ resetBtn.addEventListener('click', function (e) {
     display2.textContent = p2Score
     display2.classList.remove('text-success', 'text-danger')
     display1.classList.remove('text-success', 'text-danger')
+    p1Button.disabled = false
+    p2Button.disabled = false
     GameOver = false
 
 })

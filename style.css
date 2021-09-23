@@ -16,14 +16,13 @@ body {
     padding: 20px;
     border-radius: 15px;
     max-width: 35%;
-   
+
 }
 
-
-span.winner {
-    color: green;
+#displayArea {
+    border-radius: 15px;
 }
 
-span.loser {
-    color: red;
+#scoreSlider {
+    width: 30%;
 }
