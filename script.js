@@ -3,8 +3,11 @@ const p2Button = document.querySelector('#p2Button');
 const display1 = document.querySelector('#display1');
 const display2 = document.querySelector('#display2');
 const resetBtn = document.querySelector('#reset');
+const guide = document.querySelector('#guide')
 const scoreSlider = document.querySelector('#scoreSlider')
 const maxScoreDisplay = document.querySelector('#maxScoreDisplay')
+
+
 
 let winningScore = 0
 let p1Score = 0;
@@ -46,6 +49,7 @@ resetBtn.addEventListener('click', function (e) {
     p2Score = 0
     scoreSlider.value = 8
     winningScore = 0
+    guide.textContent = 'set max score'
     maxScoreDisplay.textContent = 'Score'
     display1.textContent = p1Score
     display2.textContent = p2Score
@@ -58,6 +62,7 @@ resetBtn.addEventListener('click', function (e) {
 })
 
 scoreSlider.addEventListener('change', function (e) {
+    guide.textContent = ''
     maxScoreDisplay.textContent = scoreSlider.value
     winningScore = parseInt(scoreSlider.value)
 })
