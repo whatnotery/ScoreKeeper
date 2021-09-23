@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+  </head>
+  <body class="bg-primary">
+    <div> </div>
+    <div class="container rounded-3c bg-light shadow-lg border border-5">
+      
+      <h1><span id="display1">0</span> to <span id="display2">0</span> </h1>
+      <label for="scoreSlider">Play To <span id="maxScoreDisplay">Score</span></label><br>
+      <input class="form-range" type="range" min="1" max="15" step="1" name="scoreSlider"
+        id="scoreSlider"><br>
+       <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn btn-info" id="p1Button" name="player1">Player 1 <span class="badge bg-light text-black">+1</span></button>
+        <button class="btn btn-danger text-black" id="reset" name="reset">Restart</button>
+        <button class="btn btn-info" id="p2Button" name="player2"><span class="badge bg-light text-black">+1</span> Player 2</button>
+      </div>
+    </div>
+    <div> </div>
+    <script src="script.js"></script>
+  </body>
+</html>
