@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Score Keeper</title>
   </head>
-  <body class="bg-primary">
+  <body class="bg-primary container-fluid">
     <div> </div>
-    <div class="container rounded-3c bg-light shadow-lg border border-5">
+    <section class=" rounded bg-light text-center shadow-lg border border-3 p-4">
       
-      <div  class="bg-dark px-4 py-3 mb-5 text-light text-center" id="displayArea"><h1><span id="display1">0</span> to <span id="display2">0</span> </h1>
+      <div  class="bg-dark px-3 py-3 mb-3 text-light text-center" id="displayArea"><h1><span id="display1">0</span> to <span id="display2">0</span> </h1>
       <label class="text-warning" for="scoreSlider">Play To <span id="maxScoreDisplay">Score</span></label><br></div>
       <input class="form-range" type="range" min="1" max="15" step="1" name="scoreSlider"
         id="scoreSlider"><br>
@@ -24,7 +24,7 @@
         <button class="btn btn=lg btn-danger text-black" id="reset" name="reset">Restart</button>
         <button class="btn btn-lg btn-info" id="p2Button" name="player2"><span class="badge bg-light text-black">+1</span> Player 2</button>
       </div>
-    </div>
+    </section>
     <div> </div>
     <script src="script.js"></script>
   </body>
