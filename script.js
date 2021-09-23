@@ -55,8 +55,6 @@ resetBtn.addEventListener('click', function (e) {
     display2.textContent = p2Score
     display2.classList.remove('text-success', 'text-danger')
     display1.classList.remove('text-success', 'text-danger')
-    p1Button.disabled = false
-    p2Button.disabled = false
     GameOver = false
 
 })
