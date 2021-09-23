@@ -7,8 +7,8 @@ const guide = document.querySelector('#guide')
 const scoreSlider = document.querySelector('#scoreSlider')
 const maxScoreDisplay = document.querySelector('#maxScoreDisplay')
 
-
-
+p1Button.disabled = true
+p2Button.disabled = true
 let winningScore = 0
 let p1Score = 0;
 let p2Score = 0;
@@ -65,5 +65,7 @@ scoreSlider.addEventListener('change', function (e) {
     guide.textContent = ''
     maxScoreDisplay.textContent = scoreSlider.value
     winningScore = parseInt(scoreSlider.value)
+    p1Button.disabled = false
+    p2Button.disabled = false
 })
 
