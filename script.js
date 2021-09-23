@@ -65,12 +65,8 @@ resetBtn.addEventListener('click', function (e) {
 scoreSlider.addEventListener('change', function (e) {
     maxScoreDisplay.textContent = `Play To ${scoreSlider.value}`
     winningScore = parseInt(scoreSlider.value)
-    if (!gameOver) {
     p1Button.disabled = false
     p2Button.disabled = false
-} else {
-    p1Button.disabled = true
-    p2Button.disabled = true
-}
+
 })
 
