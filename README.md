@@ -1,3 +1,3 @@
 # ScoreKeeper App
 
-see it in action [here](https://bootstrap-scorekeeper.netlify.app/)
+see it in action [here](joshea.dev/ScoreKeeper)
