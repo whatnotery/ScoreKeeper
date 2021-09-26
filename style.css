@@ -15,3 +15,21 @@ body {
 #scoreSlider {
     width: 60%;
 }
+
+.social {
+	background:rgba(255,255,255, 0.3);
+	color: black;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: black;
+}
